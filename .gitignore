@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# PyTorch
+*.pth
+*.pt
+checkpoints/
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints
+
+# Data
+data/
+datasets/
+VOCdevkit/
+COCO/
+*.jpg
+*.png
+*.xml
+*.json
+
+# Logs
+logs/
+runs/
+*.log
+wandb/
+
+# Results
+results/
+outputs/
+predictions/
+detections/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.venv
