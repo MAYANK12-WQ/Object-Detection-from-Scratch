@@ -62,7 +62,12 @@ flowchart TD
     E --> F2[wh: Exp × anchor\nRelative to anchor size]
     E --> F3[conf: Sigmoid\nObjectness score]
     E --> F4[class: Softmax\n20 VOC classes]
-    F1 & F2 & F3 & F4 --> G[Multi-Task Loss\nλ_coord·L_xy + L_wh\n+ λ_noobj·L_conf + L_cls]
+    F1 --> G[Multi-Task Loss
+    lambda_coord x L_xy + L_wh
+    + lambda_noobj x L_conf + L_cls]
+    F2 --> G
+    F3 --> G
+    F4 --> G
     G --> H[Training]
     E --> I[NMS Post-Processing\nIoU threshold = 0.5]
     I --> J[📦 Final Detections]
